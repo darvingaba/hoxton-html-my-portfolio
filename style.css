@@ -14,6 +14,10 @@ body{
     grid-auto-flow: row;
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
 }
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
 /* header and nav */
 header{
     display: grid;
@@ -34,22 +38,14 @@ header ul{
     grid-auto-flow: column;
 
 }
-a{
-    text-decoration: none;
-    color: aliceblue;
-}
+
 
 
 
 header a{
     border-radius: 20px;
     padding: 1.6rem;
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    background-image: linear-gradient(to right, #25a9e15e, #40e49544, #30dd8959, #2bb67372);
 }
 header a:hover{
     color: #d3ff35;
