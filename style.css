@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+}
+body{
+    display: grid;
+    grid-auto-flow: row;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+/* header and nav */
+header{
+    display: grid;
+    grid-auto-flow: column;
+    margin: 1rem 3rem;
+    padding: 1rem;
+    align-items: center;
+    background-color: #00090e5e;
+    border-radius: 12px;
+}
+header .logo{
+    margin-left: 4rem;
+    color: antiquewhite;
+}
+header ul{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* introduction part */
+
+main{
+    display: grid;
+    place-items:center;
+    background-color: #b12a5b;
+    padding: 4rem;
+    margin: 6rem 10rem;
+    border-radius: 12px;
+}
+main .introduction{
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+}
+main h1{
+    color: rgb(208, 255, 0);
+}
+main span{
+    color: aqua;
+}
+
+/* projects section */
+
+.projects-section{
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+    background-color: #beb7b7;
+    padding: 2rem 6rem;
+    gap: 1rem;
+}
+.projects-section h2{
+    color: rgba(0, 0, 0, 0.563);
+}
+.projects{
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    gap: 2rem;
+}
+.project1, .project2,.project3{
+    border: 1px solid rgba(0, 0, 0, 0.378);
+    padding: 10px 20px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+    border-radius: 12px;
+}
+.projects p{
+    font-size: 25px;
+    color: #cf556c;
+}
+.projects a{
+    color: #cf556c;
+}
+/* experience */
