@@ -12,7 +12,10 @@ img{
 body{
     display: grid;
     grid-auto-flow: row;
-    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    /* background-color: #68082b; */
+    background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-repeat: no-repeat;
+    background-size: 200%;
 }
 a{
     text-decoration: none;
@@ -38,9 +41,6 @@ header ul{
     grid-auto-flow: column;
 
 }
-
-
-
 
 header a{
     border-radius: 20px;
@@ -129,7 +129,7 @@ main span{
     gap: 0.5rem;
     padding: 2rem 0px;
     background-color: rgba(0, 255, 255, 0.596);
-    /* margin-bottom: 4rem; */
+    background-size: 100%;
 }
 .experience h2{
     color: rgba(0, 0, 0, 0.563);
@@ -143,10 +143,54 @@ main span{
     background-color: antiquewhite;
     padding: 1rem 4rem;
 }
+/* skills */
+.skills{
+    display: grid;
+    place-items: center;
+    grid-auto-flow: row;
+    padding: 1rem;
+    gap: 1rem;
+}
+.skills h2{
+    color: rgba(0, 0, 0, 0.563);
+}
+.skills-list{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+}
+.js , .react, .html, .css {
+    display: grid;
+    place-items: center;
+    gap: 0.1rem;
+    border: 1px solid rgba(0, 0, 0, 0.429);
+    padding: 1rem 3rem;
+    border-radius: 22px;
+}
+
 /* back to top */
 .back-to-top{
     display: grid;
     place-items: center;
     padding: 1rem ;
     background-color: rgba(0, 0, 0, 0.413);
+}
+
+@media screen and (max-width:652px) {
+    header{
+    padding: 0.4rem 0rem;
+    }
+    .projects-section{
+    padding: 1rem 2rem;
+    gap: 1rem;
+    }
+}
+@media screen and (max-width:320px) {
+    header{
+    padding: 0.4rem 0rem;
+    }
+    .projects-section{
+    padding: 1rem 2rem;
+    gap: 1rem;
+    }
 }
