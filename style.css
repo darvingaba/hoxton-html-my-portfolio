@@ -143,6 +143,13 @@ main span{
     background-color: antiquewhite;
     padding: 1rem 4rem;
 }
+.experience .labels{
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    gap: 3.2rem;
+    padding: 1rem 2rem;
+}
 /* skills */
 .skills{
     display: grid;
@@ -150,6 +157,7 @@ main span{
     grid-auto-flow: row;
     padding: 1rem;
     gap: 1rem;
+    padding: 1rem 3rem;
 }
 .skills h2{
     color: rgba(0, 0, 0, 0.563);
