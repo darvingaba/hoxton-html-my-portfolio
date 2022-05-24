@@ -9,13 +9,14 @@
 img{
     width: 100%;
 }
-body{
+
+.container{
     display: grid;
     grid-auto-flow: row;
     /* background-color: #68082b; */
     background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     background-repeat: no-repeat;
-    background-size: 200%;
+    /* background-size: 200%; */
 }
 a{
     text-decoration: none;
@@ -32,7 +33,7 @@ header{
     border-radius: 12px;
 }
 header .logo{
-    margin-left: 4rem;
+    margin-left: 2rem;
     color: antiquewhite;
 }
 header ul{
@@ -49,6 +50,9 @@ header a{
 }
 header a:hover{
     color: #d3ff35;
+}
+header .nav-logo{
+    width: 1.2rem;
 }
 
 /* socials */
@@ -70,15 +74,21 @@ header a:hover{
 main{
     display: grid;
     place-items:center;
-    background-color: #b12a5b;
-    padding: 4rem;
-    margin: 6rem 10rem;
+    background-image: url(/img/blob-haikei.svg);
+    background-repeat: no-repeat;
+    padding: 2rem;
+    margin: 4rem 0rem 0rem 0rem;
     border-radius: 12px;
 }
 main .introduction{
     display: grid;
     place-items: center;
-    gap: 1rem;
+    /* gap: 4rem; */
+    grid-auto-flow: column;
+}
+main .paragraph{
+    display: grid;
+    /* gap: 2rem; */
 }
 main p{
     place-items: center;
@@ -117,12 +127,18 @@ main span{
     gap: 10px;
     border-radius: 12px;
 }
+
 .projects p{
     font-size: 25px;
     color: #cf556c;
 }
 .projects a{
     color: #cf556c;
+}
+.projects img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
 }
 /* experience */
 .experience{
@@ -144,6 +160,7 @@ main span{
     place-items: center;
     color: rgba(0, 0, 0, 0.824);
     background-color: antiquewhite;
+    background-repeat: no-repeat;
     padding: 1rem 4rem;
 }
 .experience .labels{
@@ -201,7 +218,7 @@ main span{
     padding: 0.4rem 0rem;
     }
     .projects-section{
-    padding: 1rem 2rem;
-    gap: 1rem;
+    padding: 0rem 0rem;
+    gap: 0rem;
     }
 }
